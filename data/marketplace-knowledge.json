@@ -1,0 +1,179 @@
+[
+  {
+    "domain_id": "marketplace",
+    "version": "1.0",
+    "status": "approved",
+    "owner": "VoiceBridge synthetic product team",
+    "effective_date": "2026-11-10",
+    "id": "kb-market-overview",
+    "title": "Marketplace intelligence — product overview",
+    "category": "overview",
+    "excerpt": "This fictional product supports discovery and evaluation of product intelligence for an online marketplace. Its documented approach combines statistical learning, computer vision and predictive modelling. It does not promise recommendation accuracy, conversion gains or an implementation timeline. Technical review must determine suitable inputs, architecture and evaluation criteria.",
+    "keywords": [
+      "marketplace",
+      "product intelligence",
+      "recommendation",
+      "cold-start",
+      "cold start"
+    ]
+  },
+  {
+    "domain_id": "marketplace",
+    "version": "1.0",
+    "status": "approved",
+    "owner": "VoiceBridge synthetic product team",
+    "effective_date": "2026-11-10",
+    "id": "kb-market-cold-start",
+    "title": "New products without interaction history",
+    "category": "recommendation",
+    "excerpt": "The fictional cold-start approach uses available product information with statistical learning, computer vision and predictive modelling to generate initial product intelligence when clicks, reviews or purchase history are limited or absent. Implementation depends on suitable catalogue metadata or images, data-quality checks and a scoped evaluation. Recommendation quality is not guaranteed.",
+    "keywords": [
+      "cold-start",
+      "cold start",
+      "no clicks",
+      "no reviews",
+      "purchase history",
+      "interaction data",
+      "historical",
+      "new product",
+      "नया उत्पाद",
+      "history nahi",
+      "clicks",
+      "reviews"
+    ],
+    "capability_id": "market-cold-start",
+    "requirement": "Support products with limited interaction history",
+    "description": "Generate and evaluate initial product intelligence for new products without assuming that clicks, reviews or purchase history already exist.",
+    "status_value": "conditional",
+    "criteria": [
+      "Demonstrate the approach using representative products with no interaction history.",
+      "Record which catalogue inputs are present, absent or unusable.",
+      "Evaluate against an agreed baseline without guaranteeing accuracy."
+    ],
+    "dependencies": [
+      "Suitable catalogue metadata or product images must be available and reviewed.",
+      "Data quality, permitted use and a scoped evaluation must be agreed."
+    ],
+    "questions": [
+      "Which metadata and images are available when a new listing is created?",
+      "How should recommendation relevance be evaluated?"
+    ],
+    "recommendation_fit": true,
+    "customer_response": {
+      "English": "The cold-start approach uses available product information when interaction history is limited. Implementation depends on suitable metadata or images, data-quality checks and a scoped evaluation; recommendation quality is not guaranteed.",
+      "Hindi": "शुरुआती प्रोडक्ट जानकारी उपलब्ध डेटा पर निर्भर है। उपयुक्त मेटाडेटा या चित्र, डेटा गुणवत्ता और मूल्यांकन जरूरी हैं। सिफारिशों की गुणवत्ता की गारंटी नहीं है।",
+      "Hinglish": "Cold-start approach available product information use karti hai. Implementation suitable metadata ya images, data-quality checks aur scoped evaluation par depend karta hai. Recommendation quality guaranteed nahi hai."
+    }
+  },
+  {
+    "domain_id": "marketplace",
+    "version": "1.0",
+    "status": "approved",
+    "owner": "VoiceBridge synthetic product team",
+    "effective_date": "2026-11-10",
+    "id": "kb-market-relevance",
+    "title": "Recommendation relevance and evaluation",
+    "category": "evaluation",
+    "excerpt": "Recommendation relevance is an evaluation goal, not a verified performance level. A pilot must define the intended customer context, success criteria, a baseline, representative catalogue samples and handling of missing interaction history. No numeric accuracy, uplift, conversion rate or delivery deadline is approved.",
+    "keywords": [
+      "right customers",
+      "accuracy",
+      "relevance",
+      "relevant",
+      "recommend",
+      "evaluation",
+      "baseline",
+      "interested",
+      "सटीक",
+      "सही ग्राहक"
+    ],
+    "capability_id": "market-relevance",
+    "requirement": "Define and evaluate recommendation relevance",
+    "description": "Agree how to evaluate recommendations for the intended customers and products when interaction history is limited.",
+    "status_value": "conditional",
+    "criteria": [
+      "Document user context and pilot success criteria.",
+      "Compare against an agreed baseline on representative products.",
+      "Report limitations and missing data alongside results."
+    ],
+    "dependencies": [
+      "Customer and engineering must agree evaluation criteria and representative data."
+    ],
+    "questions": [
+      "Which customer context and success criteria should the pilot use?"
+    ],
+    "recommendation_fit": true,
+    "customer_response": {
+      "English": "Recommendation relevance depends on the available inputs and must be evaluated against an agreed baseline and success criteria; there is no approved accuracy or uplift guarantee.",
+      "Hindi": "प्रासंगिकता उपलब्ध जानकारी पर निर्भर है। तय बेसलाइन और सफलता के मानदंड के अनुसार मूल्यांकन जरूरी है; सटीकता की गारंटी नहीं है।",
+      "Hinglish": "Recommendation relevance available inputs par depend karti hai. Agreed baseline aur success criteria ke against evaluation chahiye; accuracy guarantee nahi hai."
+    }
+  },
+  {
+    "domain_id": "marketplace",
+    "version": "1.0",
+    "status": "approved",
+    "owner": "VoiceBridge synthetic product team",
+    "effective_date": "2026-11-10",
+    "id": "kb-market-inputs",
+    "title": "Product metadata and visual inputs",
+    "category": "data",
+    "excerpt": "The documented technical approach may use statistical product metadata and visual signals from permitted product images. Choosing these inputs is a proposed technical approach, not automatically a customer requirement. Exact schemas, image coverage, usage permissions and model design require technical assessment.",
+    "keywords": [
+      "metadata",
+      "images",
+      "visual",
+      "computer vision",
+      "statistical",
+      "product information",
+      "catalogue",
+      "catalog",
+      "मेटाडेटा",
+      "चित्र"
+    ],
+    "capability_id": "market-inputs",
+    "requirement": "Assess available product data and visual inputs",
+    "description": "Assess suitable catalogue metadata and permitted product images before selecting the technical approach.",
+    "status_value": "conditional",
+    "criteria": [
+      "Inventory metadata fields and image coverage.",
+      "Confirm permitted use and missing or unusable fields.",
+      "Record the reviewed input-selection decision."
+    ],
+    "dependencies": [
+      "Available metadata, image coverage and permitted use must be reviewed."
+    ],
+    "questions": [
+      "Which metadata fields and images are present for a new listing?"
+    ],
+    "recommendation_fit": true,
+    "customer_response": {
+      "English": "Input selection depends on reviewed catalogue metadata, image coverage and permitted use. The technical team will assess these before confirming the approach.",
+      "Hindi": "इनपुट का चयन कैटलॉग डेटा, चित्रों की उपलब्धता और उपयोग की अनुमति पर निर्भर है। तकनीकी टीम इसकी समीक्षा करेगी।",
+      "Hinglish": "Input selection reviewed metadata, image coverage aur permitted use par depend karta hai. Technical team approach confirm karne se pehle assess karegi."
+    }
+  },
+  {
+    "domain_id": "marketplace",
+    "version": "1.0",
+    "status": "approved",
+    "owner": "VoiceBridge synthetic product team",
+    "effective_date": "2026-11-10",
+    "id": "kb-market-playbook",
+    "title": "Marketplace sales guidance and claims",
+    "category": "sales_playbook",
+    "excerpt": "Explain the cold-start problem using the customer question. Ask for available catalogue data and how the team defines relevance. Describe statistical learning, computer vision and predictive modelling as the candidate approach. Never guarantee accuracy, revenue, architecture, customer targeting or a delivery date. Do not equate expressed interest with a closed sale. Escalate unverified performance and implementation commitments for technical review.",
+    "keywords": [
+      "sales",
+      "promise",
+      "guarantee",
+      "accuracy",
+      "budget",
+      "price",
+      "timeline",
+      "conversion",
+      "implementation",
+      "claim"
+    ]
+  }
+]

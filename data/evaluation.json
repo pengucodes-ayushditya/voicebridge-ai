@@ -1,0 +1,17 @@
+[
+{"id":"english-qr","language":"English","turns":[["customer","We need QR-based device history."]],"capabilities":["qr"],"statuses":{"qr":"supported"},"promise":false},
+{"id":"hindi-repair","language":"Hindi","turns":[["customer","मरम्मत और डायग्नोस्टिक रिकॉर्ड एक जगह चाहिए।"]],"capabilities":["repair"],"statuses":{"repair":"supported"},"promise":false},
+{"id":"hinglish-erp","language":"Hinglish","turns":[["customer","Hamare ERP ke saath integration chahiye."]],"capabilities":["erp"],"statuses":{"erp":"conditional"},"promise":false},
+{"id":"vague-need","language":"English","turns":[["customer","Our operations are messy and we need help."]],"capabilities":[],"statuses":{},"promise":false,"unclassified":true},
+{"id":"owner-privacy","language":"English","turns":[["customer","Repair partners must not see original owner personal information."]],"capabilities":["repair","privacy"],"statuses":{"privacy":"conditional","repair":"supported"},"promise":false},
+{"id":"price-objection","language":"English","turns":[["customer","This is expensive. What is the exact price?"]],"capabilities":[],"statuses":{},"promise":false,"unclassified":true},
+{"id":"unknown-certification","language":"English","turns":[["customer","Do you have ISO 27001 certification?"]],"capabilities":[],"statuses":{},"promise":false,"unclassified":true},
+{"id":"overpromise","language":"English","turns":[["customer","We need ERP integration."],["sales","We integrate with any ERP."]],"capabilities":["erp"],"statuses":{"erp":"conditional"},"promise":true},
+{"id":"conflicting-access","language":"English","turns":[["customer","Partners must not see owner personal data."],["customer","Actually every partner should see owner personal data."]],"capabilities":["privacy"],"statuses":{"privacy":"conditional"},"promise":false,"conflict":true},
+{"id":"api-dependency","language":"English","turns":[["customer","Can you connect our ERP? Its API is not enabled yet."]],"capabilities":["erp"],"statuses":{"erp":"conditional"},"promise":false},
+{"id":"revised-volume","language":"English","turns":[["customer","Our monthly volume is 2000 devices."],["customer","Actually the monthly volume is now 10000 devices."]],"capabilities":["scale"],"statuses":{"scale":"unknown"},"promise":false,"revision":true},
+{"id":"clarification","language":"Hinglish","turns":[["customer","Pakka? QR scan karne par kya dikhega? Please clarify."]],"capabilities":["qr"],"statuses":{"qr":"supported"},"promise":false},
+{"id":"budget-and-capacity","language":"English","turns":[["customer","Budget is limited. We need 20000 devices per month."]],"capabilities":["scale"],"statuses":{"scale":"unknown"},"promise":false},
+{"id":"unsupported-offline","language":"English","turns":[["customer","Can the system work fully offline?"]],"capabilities":["offline"],"statuses":{"offline":"unsupported"},"promise":false},
+{"id":"hindi-privacy","language":"Hindi","turns":[["customer","पार्टनर को मालिक की व्यक्तिगत जानकारी नहीं दिखनी चाहिए।"]],"capabilities":["privacy"],"statuses":{"privacy":"conditional"},"promise":false}
+]

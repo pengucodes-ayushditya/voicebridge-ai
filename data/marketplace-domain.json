@@ -1,0 +1,30 @@
+{
+  "id": "marketplace",
+  "label": "Marketplace intelligence",
+  "user_persona": "marketplace product lead",
+  "configurations": [
+    {
+      "name": "Product Intelligence · Cold-start discovery",
+      "match_any": [
+        "market-cold-start",
+        "market-relevance",
+        "market-inputs"
+      ]
+    }
+  ],
+  "sources": [
+    "kb-market-overview",
+    "kb-market-playbook"
+  ],
+  "next_question_priority": [
+    "market-cold-start",
+    "market-relevance",
+    "market-inputs"
+  ],
+  "objection_response": "It is reasonable to ask how recommendations work without interaction history. Recommendation quality must be evaluated on your products and customers. Which catalogue inputs and success criteria can we review?",
+  "next_steps": {
+    "English": "Next step: review available catalogue data and images, confirm the customer experience, and agree a baseline and recommendation evaluation criteria before making implementation commitments.",
+    "Hindi": "अगला कदम: उपलब्ध कैटलॉग डेटा और चित्रों की समीक्षा करें। ग्राहक अनुभव, बेसलाइन और मूल्यांकन मानदंड तय करने के बाद ही इम्प्लीमेंटेशन की प्रतिबद्धता करें।",
+    "Hinglish": "Agla step: available catalogue data aur images review karein. Customer experience, baseline aur evaluation criteria agree karne ke baad implementation commitment dein."
+  }
+}

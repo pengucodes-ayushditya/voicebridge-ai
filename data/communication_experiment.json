@@ -1,0 +1,20 @@
+{
+  "synthetic": true,
+  "design": "Authored scripted comparison; outcomes are scenario fixtures, not measured customer responses.",
+  "persona": "A refurbishment operations lead who previously experienced a failed ERP integration",
+  "need": "QR repair history, private owner information, and validated ERP integration",
+  "objection": "The last vendor overpromised. Why should I trust your ERP integration?",
+  "strategies": [
+    {"id": "universal", "name": "Universal promise", "pitch": "We integrate with every ERP. Every partner sees the complete device history."},
+    {"id": "scoped", "name": "Scoped validation", "pitch": "ERP integration depends on API compatibility and sandbox validation. Partners see assigned records and owner personal details remain hidden. Which ERP version do you use?"}
+  ],
+  "runs": [
+    {"id": "u1", "strategy_id": "universal", "outcome": "clarification_request", "quote": "Every ERP? Does that include our old version without an API?"},
+    {"id": "u2", "strategy_id": "universal", "outcome": "objection_persists", "quote": "You have not explained how owner information stays private."},
+    {"id": "u3", "strategy_id": "universal", "outcome": "objection_persists", "quote": "That sounds like the same promise the previous vendor made."},
+    {"id": "s1", "strategy_id": "scoped", "outcome": "expressed_interest", "quote": "A sandbox check makes sense. I can share our ERP version."},
+    {"id": "s2", "strategy_id": "scoped", "outcome": "clarification_request", "quote": "Which sample partner accounts should we use for privacy testing?"},
+    {"id": "s3", "strategy_id": "scoped", "outcome": "expressed_interest", "quote": "Let us agree on the validation criteria before we commit."}
+  ],
+  "caveat": "Six authored runs, three per strategy, with the same persona and objection. No randomisation, independent observations, causal inference or real-world conversion claim. This demonstrates the comparison mechanism only."
+}

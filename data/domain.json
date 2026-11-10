@@ -1,0 +1,87 @@
+{
+  "id": "synthetic-device-lifecycle",
+  "label": "Synthetic device lifecycle domain",
+  "user_persona": "refurbishment operator",
+  "configurations": [
+    {
+      "name": "Lifecycle Core + Partner Access",
+      "match_any": [
+        "privacy"
+      ]
+    },
+    {
+      "name": "Lifecycle Core",
+      "match_any": [
+        "qr",
+        "repair"
+      ]
+    }
+  ],
+  "sources": [
+    "kb-overview",
+    "kb-playbook"
+  ],
+  "next_question_priority": [
+    "erp",
+    "privacy",
+    "scale"
+  ],
+  "objection_response": "Your concern is reasonable. We should validate documented fit and limitations before committing. What is the most important constraint to clarify?",
+  "next_steps": {
+    "English": "Next step: please confirm your ERP vendor/version, API access, partner roles and expected volume.",
+    "Hindi": "अगला कदम: ERP का नाम और संस्करण, API उपलब्धता, पार्टनर की भूमिकाएँ और अपेक्षित संख्या बताएँ।",
+    "Hinglish": "Agla step: ERP vendor/version, API access, partner roles aur expected volume confirm karein."
+  },
+  "observation_patterns": {
+    "question": [
+      "?",
+      "क्या",
+      "kya ",
+      "kaise ",
+      "how ",
+      "what ",
+      "which ",
+      "clarify"
+    ],
+    "objection": [
+      "expensive",
+      "budget",
+      "concern",
+      "skeptical",
+      "frustrat",
+      "महंगा",
+      "चिंता",
+      "pakka"
+    ],
+    "constraint": [
+      "must not",
+      "only",
+      "not see",
+      "private",
+      "privacy",
+      "nahi",
+      "नहीं",
+      "केवल"
+    ],
+    "revision": [
+      "actually",
+      "instead",
+      "now ",
+      "बदल",
+      "अब "
+    ],
+    "timing": [
+      "deadline",
+      "by friday",
+      "next month",
+      "अगले महीने"
+    ],
+    "budget": [
+      "budget",
+      "price",
+      "cost",
+      "बजट",
+      "कीमत"
+    ]
+  }
+}

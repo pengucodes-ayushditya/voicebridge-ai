@@ -1,0 +1,234 @@
+[
+  {
+    "id": "kb-qr",
+    "title": "Device identity & QR lifecycle",
+    "category": "capability",
+    "version": "1.0",
+    "status": "approved",
+    "owner": "Synthetic demo product team",
+    "capability_id": "qr",
+    "keywords": [
+      "qr",
+      "device history",
+      "lifecycle",
+      "क्यूआर",
+      "इतिहास"
+    ],
+    "requirement": "Provide QR-based device lifecycle history",
+    "description": "Associate a unique QR with each device and show its lifecycle events.",
+    "status_value": "supported",
+    "excerpt": "The synthetic Lifecycle Core configuration supports a unique device QR linked to lifecycle events. QR possession does not grant access to private records.",
+    "criteria": [
+      "Scanning an authorised device QR opens only that device’s lifecycle record.",
+      "An unauthorised scan does not expose restricted records."
+    ],
+    "questions": [],
+    "dependencies": [],
+    "pitch_hinglish": "Har device ka QR uski authorised lifecycle history se link kar sakte hain.",
+    "customer_response": {
+      "Hindi": "हर डिवाइस का QR उसके इतिहास से जुड़ सकता है। केवल अधिकृत रिकॉर्ड दिखाई देंगे।",
+      "Hinglish": "Har device ka QR uski lifecycle history se link ho sakta hai; sirf authorised records dikhenge."
+    },
+    "recommendation_fit": true
+  },
+  {
+    "id": "kb-repair",
+    "title": "Central repair & diagnostics",
+    "category": "capability",
+    "version": "1.0",
+    "status": "approved",
+    "owner": "Synthetic demo product team",
+    "capability_id": "repair",
+    "keywords": [
+      "repair",
+      "diagnostic",
+      "मरम्मत",
+      "डायग्नोस्टिक"
+    ],
+    "requirement": "Centralise repair and diagnostic records",
+    "description": "Retain repair and diagnostic events against the device identity.",
+    "status_value": "supported",
+    "excerpt": "Lifecycle Core stores dated repair and diagnostic events per device, including service-partner attribution. Events are visible only to authorised roles.",
+    "criteria": [
+      "An authorised service user can add a dated diagnostic event.",
+      "The device timeline displays authorised repair events with attribution."
+    ],
+    "questions": [],
+    "dependencies": [],
+    "pitch_hinglish": "Repair aur diagnostic records ek jagah rakh sakte hain.",
+    "customer_response": {
+      "Hindi": "मरम्मत और जाँच के रिकॉर्ड एक जगह रखे जा सकते हैं।",
+      "Hinglish": "Repair aur diagnostic records ek jagah rakh sakte hain."
+    },
+    "recommendation_fit": true
+  },
+  {
+    "id": "kb-privacy",
+    "title": "Partner access & owner privacy",
+    "category": "privacy",
+    "version": "1.0",
+    "status": "approved",
+    "owner": "Synthetic demo product team",
+    "capability_id": "privacy",
+    "keywords": [
+      "partner",
+      "owner",
+      "personal",
+      "privacy",
+      "पार्टनर",
+      "मालिक",
+      "निजी",
+      "व्यक्तिगत"
+    ],
+    "requirement": "Restrict repair-partner access and protect owner personal data",
+    "description": "Partners may access relevant device repair records only; original-owner personal information must remain hidden.",
+    "status_value": "conditional",
+    "excerpt": "Partner access requires configured role policies and permission tests. Partners see assigned device service records, never original-owner personal information. Public QR views exclude personal data.",
+    "criteria": [
+      "A repair-partner account can view assigned device service records.",
+      "Owner name, contact details and identity data are absent from partner responses and views.",
+      "A partner cannot retrieve unassigned records by changing a device ID."
+    ],
+    "questions": [
+      "Which partner roles and assignment rules are required?"
+    ],
+    "dependencies": [
+      "Role-policy configuration",
+      "Permission and API access tests"
+    ],
+    "pitch_hinglish": "Partner ko sirf assigned service records dikhenge; owner personal information hidden rahegi, role configuration aur permission testing ke baad.",
+    "customer_response": {
+      "Hindi": "पार्टनर को केवल संबंधित रिकॉर्ड दिखेंगे। मालिक की व्यक्तिगत जानकारी नहीं दिखेगी। इसके लिए भूमिका विन्यास और अनुमति परीक्षण ज़रूरी हैं।",
+      "Hinglish": "Partner ko sirf assigned service records dikhenge; owner ki personal information hidden rahegi. Role configuration aur permission testing zaroori hai."
+    },
+    "recommendation_fit": true
+  },
+  {
+    "id": "kb-erp",
+    "title": "ERP integration prerequisites",
+    "category": "integration",
+    "version": "1.0",
+    "status": "approved",
+    "owner": "Synthetic demo product team",
+    "capability_id": "erp",
+    "keywords": [
+      "erp",
+      "integration",
+      "integrate",
+      "ईआरपी",
+      "जोड़",
+      "connect"
+    ],
+    "requirement": "Integrate with the customer’s ERP",
+    "description": "Assess ERP integration compatibility before making a commitment.",
+    "status_value": "conditional",
+    "excerpt": "ERP integration is conditional on accessible APIs, authentication, field mapping, vendor/version compatibility and sandbox testing. No universal ERP connector, fixed delivery date or compatibility guarantee is approved.",
+    "criteria": [
+      "Record ERP vendor/version, API documentation and authentication method.",
+      "Validate field mapping and a create/update flow in a sandbox before approving integration."
+    ],
+    "questions": [
+      "What is the ERP vendor/version, and are API documentation and a sandbox available?"
+    ],
+    "dependencies": [
+      "API availability and compatibility review",
+      "Authentication and field mapping",
+      "Sandbox validation"
+    ],
+    "pitch_hinglish": "ERP integration API availability aur compatibility review par depend karega.",
+    "customer_response": {
+      "Hindi": "ERP जोड़ना API उपलब्धता और संगतता (compatibility) पर निर्भर है। पहले API, फ़ील्ड मैपिंग और सैंडबॉक्स परीक्षण की समीक्षा होगी।",
+      "Hinglish": "ERP integration API availability aur compatibility par depend karega. Authentication, field mapping aur sandbox testing pehle validate karenge."
+    },
+    "recommendation_fit": false
+  },
+  {
+    "id": "kb-scale",
+    "title": "Volume & capacity validation",
+    "category": "scale",
+    "version": "1.0",
+    "status": "approved",
+    "owner": "Synthetic demo product team",
+    "capability_id": "scale",
+    "keywords": [
+      "volume",
+      "monthly",
+      "scale",
+      "devices per",
+      "महीन",
+      "हजार",
+      "capacity",
+      "growing"
+    ],
+    "requirement": "Validate capacity against expected device volume",
+    "description": "Clarify monthly device volume, peak concurrency and growth before confirming capacity.",
+    "status_value": "unknown",
+    "excerpt": "No throughput guarantee is approved. Monthly device volume, peak concurrency, event counts and retention must be established and load tested. Pricing is not documented.",
+    "criteria": [
+      "Document current and target monthly volume and peak concurrency.",
+      "Agree and run a representative load test before a capacity commitment."
+    ],
+    "questions": [
+      "What are current/target volume, peak concurrency and retention needs?"
+    ],
+    "dependencies": [
+      "Workload definition",
+      "Load testing"
+    ],
+    "pitch_hinglish": "Capacity ko workload definition aur load testing se validate karna hoga; abhi guarantee nahi hai.",
+    "customer_response": {
+      "Hindi": "क्षमता का वादा अभी नहीं कर सकते। मासिक संख्या और अधिकतम उपयोग स्पष्ट करके लोड परीक्षण करना होगा।",
+      "Hinglish": "Volume ke liye abhi guarantee nahi hai. Monthly volume aur peak usage clarify karke load testing karni hogi."
+    },
+    "recommendation_fit": false
+  },
+  {
+    "id": "kb-offline",
+    "title": "Unsupported scope & prohibited claims",
+    "category": "limitations",
+    "version": "1.0",
+    "status": "approved",
+    "owner": "Synthetic demo product team",
+    "capability_id": "offline",
+    "keywords": [
+      "offline",
+      "ऑफलाइन"
+    ],
+    "requirement": "Operate fully offline",
+    "description": "Clarify alternatives because fully offline operation is outside this demo configuration.",
+    "status_value": "unsupported",
+    "excerpt": "Fully offline synchronisation, biometric identification, automatic ERP compatibility and guaranteed zero downtime are outside the synthetic product scope. Never promise any ERP, unlimited capacity, security certifications or undocumented pricing.",
+    "criteria": [
+      "Explain that fully offline operation is outside this configuration.",
+      "Ask whether a connected workflow is acceptable."
+    ],
+    "questions": [
+      "Is a connected workflow acceptable?"
+    ],
+    "dependencies": [],
+    "pitch_hinglish": "Fully offline operation is configuration mein supported nahi hai.",
+    "customer_response": {
+      "Hindi": "पूरी तरह ऑफलाइन काम करना इस कॉन्फ़िगरेशन में उपलब्ध नहीं है।",
+      "Hinglish": "Fully offline operation is configuration mein supported nahi hai."
+    },
+    "recommendation_fit": false
+  },
+  {
+    "id": "kb-overview",
+    "title": "Lifecycle Core + Partner Access configuration",
+    "category": "overview",
+    "version": "1.0",
+    "status": "approved",
+    "owner": "Synthetic demo product team",
+    "excerpt": "Synthetic configurable B2B device-lifecycle platform. Lifecycle Core combines device QR identity and central service history. Partner Access adds restricted service-partner workflows, conditional on access-policy setup. ERP discovery is an assessment, not a guaranteed connector. No real EcoXchange deployment claims."
+  },
+  {
+    "id": "kb-playbook",
+    "title": "Approved discovery & objection playbook",
+    "category": "sales",
+    "version": "1.0",
+    "status": "approved",
+    "owner": "Synthetic demo product team",
+    "excerpt": "Acknowledge concerns, explain documented fit, preserve limitations, then ask one concrete discovery question. For price concerns, ask budget and scope; do not invent a price. For integration concerns, ask vendor/version and API access. For a skeptical buyer, propose a scoped validation before commitment."
+  }
+]
